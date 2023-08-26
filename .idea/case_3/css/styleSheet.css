@@ -1,0 +1,56 @@
+div{
+    background-color: blue;
+    width: 188px;
+    height: 79px;
+    border-radius: 50px;
+    position: absolute;
+    animation-duration: 15s;
+    animation-name: animation-squre;
+}
+
+body{
+    background-color:cornflowerblue;
+    overflow: hidden;
+}
+div:hover{
+    transform: rotate(360deg);
+    transition-duration: 2s;
+}
+
+@keyframes animation-squre {
+0%{
+margin-top: 0;
+    margin-left: 0;
+    background-color: blue;
+    transform: rotate(0deg);
+
+}
+    25%{
+        margin-top: 0;
+        margin-left: calc(100vw - (188px));
+        transform: rotate(180deg) ;
+        background-color: yellow;
+
+    }
+    50%{
+        margin-top: calc(100vh - (79px));
+        margin-left: calc(100vw - (188px));
+        background-color: red;
+        transform: rotate(0deg) ;
+
+    }
+    75%{
+        margin-top: calc(100wh - (79px));
+        background-color: green;
+        transform: rotate(180deg) ;
+        margin-left: 0;
+
+    }
+    100%{
+
+        margin-top: 0;
+        margin-left: 0;
+        background-color: orange;
+        transform: rotate(0deg) ;
+    }
+}
